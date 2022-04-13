@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Socket.IO chat</title>
+   
+
+  </head>
+  <body>
+    
+    <button onclick=getListRoom() id="getListRoom">Get List Room</button>
+    
+    <form id="roomForm" action="">
+      <label>room name</label>
+      <input id="inputRoom" autocomplete="off" />
+      <label>username</label>
+      <input id="username" autocomplete="off" />
+      <button id="createRoom">Create Room</button>
+    </form>
+    
+
+    <ul id="messages"></ul>
+    <form id="form" action="">
+      <input id="input" autocomplete="off" /><button id="send">Send</button>
+    </form>
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
